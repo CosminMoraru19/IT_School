@@ -112,7 +112,7 @@ patrat1.aria()
 del patrat1.latura
 patrat1.latura
 
-
+# https://github.com/CosminMoraru19/IT_School
 
 
 
