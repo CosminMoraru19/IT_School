@@ -27,7 +27,7 @@ chrome.find_element(By.CSS_SELECTOR, 'input[placeholder="Enter last name"]').sen
 chrome.find_element(By.CSS_SELECTOR, 'div input[placeholder*="last name"]').send_keys('test4')
 
 
-sleep(5)
+sleep(52415)
 chrome.quit()
 
 

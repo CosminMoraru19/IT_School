@@ -11,7 +11,7 @@ chrome = webdriver.Chrome(service=s)
 chrome.maximize_window()
 #intram pe pagina unde vrem sa facem testul
 
-chrome.get('https://formy-project.herokuapp.com')
+# chrome.get('https://formy-project.herokuapp.com')
 
 # selector pe baza link_text
 # try:
@@ -134,22 +134,29 @@ chrome.get('https://formy-project.herokuapp.com')
 #     print('Ceva nu a functionat in css selector by atribut valoare')
 #
 # sleep(2)
+
 # # # CSS selector by ID
 # chrome.get('https://formy-project.herokuapp.com/scroll')
 # try:
 #     chrome.find_element(By.CSS_SELECTOR, 'input#name').send_keys('Cosmin')
 # except Exception as e:
 #     print('Ceva nu a functionat in css selector by ID')
-#
+
 # # CSS selector by class
-# chrome.get('https://formy-project.herokuapp.com/scroll')
+chrome.get('https://formy-project.herokuapp.com')
+
+# try:
+#     chrome.find_element(By.XPATH, '/html/body/div/div/li[14]/a').click()
+# except Exception as e:
+#     print('Ceva nu a functionat xpathc 1')
+#
+# try:
+#     chrome.find_element(By.XPATH, '/html/body/div/form/div/div[1]/input').send_keys('Cosmin')
+# except Exception as e:
+#     print('Ceva nu a functionat xpathc 1')
 
 
 
-
-
-
-
-sleep(100000)
+sleep(10)
 chrome.quit()
 
