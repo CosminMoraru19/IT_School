@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+
 import datetime
 
 # initializam chrome
@@ -81,22 +83,27 @@ chrome.maximize_window()
 # chrome.back()
 #
 #
-# # chrome.get('https://www.techlistic.com/p/selenium-practice-form.html')
-# #
-# # #Selector by partial link text
-# #
-# # try:
-# #     Click_cookies = chrome.find_element(By.ID, 'ez-accept-all').click()
-# # except Exception as e:
-# #     print('Ceva nu a functionat class accept de cookies')
-# #
-# # try:
-# #     close_ad = chrome.find_element(By.ID, 'ad_position_box').click()
-# #     # close_ad[0].click()
-# # except Exception as e:
-# #     print('Ceva nu a functionat class form control')
+# chrome.get('https://www.techlistic.com/p/selenium-practice-form.html')
+
+#Selector by partial link text
+
+# try:
+#     Click_cookies = chrome.find_element(By.ID, 'ez-accept-all').click()
+#
+# except Exception as e:
+#     print('Ceva nu a functionat class accept de cookies')                             how to get rid of an ad
 #
 #
+# action = ActionChains(chrome)
+# action.move_by_offset(10, 10). click().perform()
+# action.move_by_offset(10, 10). click().perform()
+# action.move_by_offset(10, 10). click().perform()
+# action.move_by_offset(10, 10). click().perform()
+
+
+# close_ad[0].click()
+
+
 # chrome.get('https://formy-project.herokuapp.com')
 #
 #
@@ -143,8 +150,8 @@ chrome.maximize_window()
 #     print('Ceva nu a functionat in css selector by ID')
 
 # # CSS selector by class
-chrome.get('https://formy-project.herokuapp.com')
-
+# chrome.get('https://formy-project.herokuapp.com')
+#
 # try:
 #     chrome.find_element(By.XPATH, '/html/body/div/div/li[14]/a').click()
 # except Exception as e:
@@ -157,6 +164,6 @@ chrome.get('https://formy-project.herokuapp.com')
 
 
 
-sleep(10)
+sleep(10000)
 chrome.quit()
 
