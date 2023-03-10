@@ -46,5 +46,5 @@ class Test(unittest.TestCase):
 
     def test_check_url_title(self):
         actual = self.chrome.title
-        expected = ''
+        expected = 'The Internet'
         self.assertEqual(actual,expected, 'Nu sunt egale')
