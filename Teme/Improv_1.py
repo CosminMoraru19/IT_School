@@ -28,10 +28,33 @@ class Test(unittest.TestCase):
     ENTRY_AD = (By.XPATH, '//*[@id="content"]/ul/li[15]/a')
     EXIT_INTENT = (By.XPATH, '//*[@id="content"]/ul/li[16]/a')
     FILE_DOWNLOAD = (By.XPATH, '//*[@id="content"]/ul/li[17]/a')
+    FILE_UPLOAD = (By.XPATH, '//*[@id="content"]/ul/li[18]/a')
     FLOATING_MENU = (By.XPATH, '//*[@id="content"]/ul/li[19]/a')
     FORGET_PASSWORD = (By.XPATH, '//*[@id="content"]/ul/li[20]/a')
     FORM_AUTENTIF = (By.XPATH, '//*[@id="content"]/ul/li[21]/a')
     FRAMES = (By.XPATH, '//*[@id="content"]/ul/li[22]/a')
+    GEOLOCATION = (By.XPATH, '//*[@id="content"]/ul/li[23]/a')
+    HORIZONTAL_SLIDER = (By.XPATH, '//*[@id="content"]/ul/li[24]/a')
+    HOVERS = (By.XPATH, '//*[@id="content"]/ul/li[25]/a')
+    INFINITE_SCROLL = (By.XPATH, '//*[@id="content"]/ul/li[26]/a')
+    INPUTS = (By.XPATH, '//*[@id="content"]/ul/li[27]/a')
+    JQUERY_UI_MENU = (By.XPATH, '//*[@id="content"]/ul/li[28]/a')
+    JAVASCRIPTALERT = (By.XPATH, '//*[@id="content"]/ul/li[29]/a')
+    JAVASCRIPT_ONLOAD = (By.XPATH, '//*[@id="content"]/ul/li[30]/a')
+    KEY_PROGRESS = (By.XPATH, '//*[@id="content"]/ul/li[31]/a')
+    LARGE_DEEP_DOM = (By.XPATH, '//*[@id="content"]/ul/li[32]/a')
+    MULTIPLE_WINDOWS = (By.XPATH, '//*[@id="content"]/ul/li[33]/a')
+    NESTED_FRAMES = (By.XPATH, '//*[@id="content"]/ul/li[34]/a')
+    NOTIFICATION_MESSAGE = (By.XPATH, '//*[@id="content"]/ul/li[35]/a')
+    REDIRECT_LINK = (By.XPATH, '//*[@id="content"]/ul/li[36]/a')
+    SECURE_FILE_DOWNLOAD = (By.XPATH, '//*[@id="content"]/ul/li[37]/a')
+    SHADOW_DOM = (By.XPATH, '//*[@id="content"]/ul/li[38]/a')
+    SHIFTING_CONTENT = (By.XPATH, '//*[@id="content"]/ul/li[39]/a')
+    SLOW_RESOURCES = (By.XPATH, '//*[@id="content"]/ul/li[40]/a')
+    SORTABLE_DATA_TABLES = (By.XPATH, '//*[@id="content"]/ul/li[41]/a')
+    STATUS_CODES = (By.XPATH, '//*[@id="content"]/ul/li[42]/a')
+    TYPOS = (By.XPATH, '//*[@id="content"]/ul/li[43]/a')
+    WYSIWYG_EDITORS = (By.XPATH, '//*[@id="content"]/ul/li[44]/a')
 
     def setUp(self) -> None:
         s = Service(ChromeDriverManager().install())
@@ -78,4 +101,99 @@ class Test(unittest.TestCase):
         self.chrome.back()
         sleep(2)
 
+    def test_context_menu(self):
+        self.chrome.find_element(*self.CONTEXT_MENU).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_digest_autentif(self):
+        self.chrome.find_element(*self.DIGEST_AUTENTIF).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_disapearing_elen(self):
+        self.chrome.find_element(*self.DISSAPEARING_ELEMENTS).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_drag_drop(self):
+        self.chrome.find_element(*self.DRAG_DROP).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_dropdown(self):
+        self.chrome.find_element(*self.DROP_DOWN).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_dynamic_content(self):
+        self.chrome.find_element(*self.DYNAMIC_CONTENT).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_dynamic_controls(self):
+        self.chrome.find_element(*self.DYNAMIC_CONTROL).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_dynamic_loading(self):
+        self.chrome.find_element(*self.DYNAMIC_LOADING).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_entry_AD(self):
+        self.chrome.find_element(*self.ENTRY_AD).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_exit_intent(self):
+        self.chrome.find_element(*self.EXIT_INTENT).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_file_downlaod(self):
+        self.chrome.find_element(*self.FILE_DOWNLOAD).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_file_upload(self):
+        self.chrome.find_element(*self.FILE_UPLOAD).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_floating_menu(self):
+        self.chrome.find_element(*self.FLOATING_MENU).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_forget_pass(self):
+        self.chrome.find_element(*self.FORGET_PASSWORD).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_form_autentif(self):
+        self.chrome.find_element(*self.FORM_AUTENTIF).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_frame(self):
+        self.chrome.find_element(*self.FRAMES).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
 
