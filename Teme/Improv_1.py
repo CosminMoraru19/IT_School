@@ -197,3 +197,128 @@ class Test(unittest.TestCase):
         self.chrome.back()
         sleep(2)
 
+    def test_geolocation(self):
+        self.chrome.find_element(*self.GEOLOCATION).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_horizontal_slider(self):
+        self.chrome.find_element(*self.HORIZONTAL_SLIDER).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_hovers(self):
+        self.chrome.find_element(*self.HOVERS).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_infinite_scroll(self):
+        self.chrome.find_element(*self.INFINITE_SCROLL).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_inputs(self):
+        self.chrome.find_element(*self.INPUTS).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_jquery_UI(self):
+        self.chrome.find_element(*self.JQUERY_UI_MENU).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_JV_alerts(self):
+        self.chrome.find_element(*self.JAVASCRIPTALERT).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_JV_onload_event(self):
+        self.chrome.find_element(*self.JAVASCRIPT_ONLOAD).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_key_presses(self):
+        self.chrome.find_element(*self.KEY_PROGRESS).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_large_deep_dom(self):
+        self.chrome.find_element(*self.LARGE_DEEP_DOM).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_multiple_window(self):
+        self.chrome.find_element(*self.MULTIPLE_WINDOWS).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_nested_frames(self):
+        self.chrome.find_element(*self.NESTED_FRAMES).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_notif_message(self):
+        self.chrome.find_element(*self.NOTIFICATION_MESSAGE).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_redirect_link(self):
+        self.chrome.find_element(*self.REDIRECT_LINK).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_secure_file_download(self):
+        self.chrome.find_element(*self.SECURE_FILE_DOWNLOAD).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_shadown_dom(self):
+        self.chrome.find_element(*self.SHADOW_DOM).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_shifting_content(self):
+        self.chrome.find_element(*self.SHIFTING_CONTENT).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_slow_resurse(self):
+        self.chrome.find_element(*self.SLOW_RESOURCES).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_sortable_data(self):
+        self.chrome.find_element(*self.SORTABLE_DATA_TABLES).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_status_codes(self):
+        self.chrome.find_element(*self.STATUS_CODES).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+
+    def test_WYSIWYG_Edistor(self):
+        self.chrome.find_element(*self.WYSIWYG_EDITORS).click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
