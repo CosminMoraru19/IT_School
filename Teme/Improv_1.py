@@ -107,7 +107,14 @@ class Test(unittest.TestCase):
         sleep(2)
 
     def test_check_box(self):
-        self.chrome.find_element(*self.CHALLENGING_DOM).click()
+        self.chrome.find_element(*self.CHECK_BOX).click()
+        self.chrome.find_element(By.XPATH, '//*[@id="checkboxes"]/input[1]').click()
+        sleep(1)
+        self.chrome.find_element(By.XPATH, '//*[@id="checkboxes"]/input[1]').click()
+        sleep(1)
+        self.chrome.find_element(By.XPATH, '//*[@id="checkboxes"]/input[2]').click()
+        sleep(1)
+        self.chrome.find_element(By.XPATH, '//*[@id="checkboxes"]/input[2]').click()
         sleep(2)
         self.chrome.back()
         sleep(2)
@@ -126,8 +133,19 @@ class Test(unittest.TestCase):
 
     def test_disapearing_elen(self):
         self.chrome.find_element(*self.DISSAPEARING_ELEMENTS).click()
+        self.chrome.find_element(By.XPATH,'//*[@id="content"]/div/ul/li[2]/a').click()
         sleep(2)
         self.chrome.back()
+        sleep(2)
+        self.chrome.find_element(By.XPATH, '//*[@id="content"]/div/ul/li[3]/a').click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+        self.chrome.find_element(By.XPATH, '//*[@id="content"]/div/ul/li[4]/a').click()
+        sleep(2)
+        self.chrome.back()
+        sleep(2)
+        self.chrome.find_element(By.XPATH, '//*[@id="content"]/div/ul/li[1]/a').click()
         sleep(2)
 
     def test_drag_drop(self):
