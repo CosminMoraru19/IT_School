@@ -68,12 +68,23 @@ class Test(unittest.TestCase):
 
     def test_ADTesting(self):
         self.chrome.find_element(*self.AB_ELEMENTS).click()
+
         sleep(2)
         self.chrome.back()
         sleep(2)
 
     def test_ADRemove(self):
         self.chrome.find_element(*self.ADD_REMOVE_ELEMENTS).click()
+        self.chrome.find_element(By.XPATH, '//*[@id="content"]/div/button').click()
+        self.chrome.find_element(By.XPATH, '//*[@id="content"]/div/button').click()
+        self.chrome.find_element(By.XPATH, '//*[@id="content"]/div/button').click()
+        self.chrome.find_element(By.XPATH, '//*[@id="content"]/div/button').click()
+        self.chrome.find_element(By.CLASS_NAME, 'added-manually').click()
+        sleep(1)
+        self.chrome.find_element(By.CLASS_NAME, 'added-manually').click()
+        sleep(1)
+        self.chrome.find_element(By.CLASS_NAME, 'added-manually').click()
+        self.chrome.find_element(By.CLASS_NAME, 'added-manually').click()
         sleep(2)
         self.chrome.back()
         sleep(2)
