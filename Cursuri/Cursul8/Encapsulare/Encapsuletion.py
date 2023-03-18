@@ -18,18 +18,21 @@ atributele si metodele private vor fi precedate  de doua caractere underline "__
 
 ATENTI! In java atributele si merodele priovate pot fi accesate doar in acelasi pachet
 
+Pentru a putea modifica atributele de tip protected, ne folosim de conceptele de getter , settter, deleter
+
 """
 
 class Casa:
     nume_etaje = None
     numar_camere = None
     numar_bai = None
-    material_constructie = None
+    __material_constructie = None
     suprafata = None
     an_constructie = None
     adresa = None
     clasa_energetica = None
     pret = None
+
 
     def __init__(self, numar_etaje, numar_camera, numar_bai, material_constructie, suprafata, adresa):
         self.numar_etaje = numar_etaje
@@ -38,7 +41,7 @@ class Casa:
             print('Nu putem cosntrui mai mult de doua bai')
         else:
             self.numar_bai = numar_bai
-        self.material_constructie = material_constructie
+        self.__material_constructie = material_constructie
         self.suprafata = suprafata
         self.adresa = adresa
 
@@ -48,7 +51,7 @@ class Casa:
         else:
             self.aprobare = True
 
-    def actualizare_an_constructie(self, an_constructie):
+    def __actualizare_an_constructie(self, an_constructie):   #metoda marcata ca fiind privata
         self.an_constructie = an_constructie
         return self.an_constructie
 
@@ -61,12 +64,30 @@ class Casa:
               f'Suprafata {self.suprafata}'
               f'Material cosntructie {self.material_constructie}')
 
+    def exemplu_apelrate_metoda(self):
+        return self.__actualizare_an_constructie()
 
-garsoniera = Casa(0 , 1, 1, 'beton', 48, 'Strada lalelelor 23')
-print(garsoniera.numar_etaje)
-# print(garsoniera.__materiale_cosntructie) asta nu o sa se vada
-apartament_2_camere = Casa(0, 2, 1, 'caramida paroasa', 70, 'Strada Zambilelor')
-apartament_4_camere = Casa(1, 4, 2, 'BCA', 130, 'Strada Trandafirilor')
+    #getter - o modalitate prin care sa extragem valoarea atributului. Nu trebuie sa aiba alt rol
+
+    def get_materiale_constructie(self):
+        return self.__material_constructie
+
+    # setter - o metoda prin care putem sa modificam valoarea unui atribut. nu trebuie sa aiba alt rol
+
+    def set_materiale_cosntrutie(self,material_cosntructie):
+         self.__material_constructie = material_cosntructie
+
+    # deleter - o modalitate prin care putem sa stergem valoarea unui atribut si nu trebuie sa aiba alt rol
+
+    def delete_materiale_cosntructii(self):
+        self.__material_constructie = None
+
+
+if __name__ == '__main__':
+    garsoniera = Casa(0 , 1, 1, 'beton', 48, 'Strada lalelelor 23')
+    print(garsoniera.numar_etaje)
+    # print(garsoniera.__materiale_cosntructie) asta nu o sa se vada
+    print(garsoniera.get_materiale_constructie())
 
 
 
