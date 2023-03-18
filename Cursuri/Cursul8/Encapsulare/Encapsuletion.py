@@ -16,15 +16,15 @@ atributele si metodele public vor fi scrise in mod normal
 atributele si metodele protected vor fi precedate de caracterul "_"
 atributele si metodele private vor fi precedate  de doua caractere underline "__"
 
-
+ATENTI! In java atributele si merodele priovate pot fi accesate doar in acelasi pachet
 
 """
 
 class Casa:
-    _nume_etaje = None
+    nume_etaje = None
     numar_camere = None
     numar_bai = None
-    __material_constructie = None
+    material_constructie = None
     suprafata = None
     an_constructie = None
     adresa = None
@@ -62,7 +62,11 @@ class Casa:
               f'Material cosntructie {self.material_constructie}')
 
 
-
+garsoniera = Casa(0 , 1, 1, 'beton', 48, 'Strada lalelelor 23')
+print(garsoniera.numar_etaje)
+# print(garsoniera.__materiale_cosntructie) asta nu o sa se vada
+apartament_2_camere = Casa(0, 2, 1, 'caramida paroasa', 70, 'Strada Zambilelor')
+apartament_4_camere = Casa(1, 4, 2, 'BCA', 130, 'Strada Trandafirilor')
 
 
 
