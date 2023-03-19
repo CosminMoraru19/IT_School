@@ -145,7 +145,7 @@ class Casa_encapsulare_decoratori():
         return self.__material_constructie
 
     @materiale_constructie.setter
-    def material_cosntructie(self, material_cosntructie):
+    def material_constructie(self, material_cosntructie):
         self.__material_constructie = material_cosntructie
 
     @materiale_constructie.deleter
