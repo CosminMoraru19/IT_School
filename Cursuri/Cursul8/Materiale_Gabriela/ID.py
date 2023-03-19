@@ -17,15 +17,21 @@ Ex:
 
 """
 import time
-
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+
 chrome = webdriver.Chrome()
 time.sleep(2)
 chrome.maximize_window()
-chrome.get('https://the-internet.herokuapp.com')  # cu aceasta comanda se deschid site-uri
+chrome.get('https://formy-project.herokuapp.com/form')  # cu aceasta comanda se deschid site-uri
+chrome.find_element(By.ID, 'first-name').send_keys('Marian')
+chrome.find_element(By.ID, 'last-name').send_keys('Andreea')
+
 time.sleep(2)
 chrome.quit()    #inchide toata intanta browserului
 #chrome.close()   inchide un singur tab din isntanta broserului
+
+
 
 
 
