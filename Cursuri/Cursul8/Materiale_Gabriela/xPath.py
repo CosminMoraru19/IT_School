@@ -45,10 +45,10 @@ chrome.get('https://formy-project.herokuapp.com/form')
 
 #6. Tratare drop down:
 
-years_of_experience = selenium.Select(chrome.find_element(By.XPATH,'//*[@id="select-menu"]'))
-time.sleep(2)
-years_of_experience.select_by_visible
-time.sleep(2)
+# years_of_experience = selenium.Select(chrome.find_element(By.XPATH,'//*[@id="select-menu"]'))
+# time.sleep(2)
+# years_of_experience.select_by_visible
+# time.sleep(2)
 """
 x y axis navigation
 1. Navigare din parinte in copil se face cu caracterul / 
