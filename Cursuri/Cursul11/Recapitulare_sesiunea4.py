@@ -138,52 +138,52 @@ valoarea elementului salvat la un anumit index
 # Pentru fiecare masina parcursa vom printa pe ecran urmatoarea propozitie:
 		#  va propunem masina x
 		# propozitia va fi printata pentru TOATE masinile MAI PUTIN Trabant si Lastun
-
-masini_vechi = []
-lista_masini = ["Audi","Skoda","Lastun","Ferrari","Porche","Alpha Romeo","Dacia","Mustang","Tesla","Mercedes","Trabant"]
-def functie_parcurgere_lista_cu_while():
-		i = 0
-		while i<=len(lista_masini):
-				if lista_masini[i] == "Lastun" or lista_masini[i]=="Trabant":
-						masini_vechi.append(lista_masini[i])
-						lista_masini.remove(lista_masini[i])
-						continue
-				print(f"Va propunem masina {lista_masini[i]}")
-				print(f"Masinile vechi curente sunt: {masini_vechi}")
-				print(f"Masinile noi curente sunt: {lista_masini}")
-				print(f"Lungimea curenta a listei este: {len(lista_masini)}")
-				i+=1
+#
+# masini_vechi = []
+# lista_masini = ["Audi","Skoda","Lastun","Ferrari","Porche","Alpha Romeo","Dacia","Mustang","Tesla","Mercedes","Trabant"]
+# def functie_parcurgere_lista_cu_while():
+# 		i = 0
+# 		while i<=len(lista_masini):
+# 				if lista_masini[i] == "Lastun" or lista_masini[i]=="Trabant":
+# 						masini_vechi.append(lista_masini[i])
+# 						lista_masini.remove(lista_masini[i])
+# 						continue
+# 				print(f"Va propunem masina {lista_masini[i]}")
+# 				print(f"Masinile vechi curente sunt: {masini_vechi}")
+# 				print(f"Masinile noi curente sunt: {lista_masini}")
+# 				print(f"Lungimea curenta a listei este: {len(lista_masini)}")
+# 				i+=1
 
 # functie_parcurgere_lista_cu_while()
 
 
-def functie_parcurgere_lista_cu_for():
-		for i in range (len(lista_masini)):
-				if lista_masini[i] == "Lastun" or lista_masini[i] == "Trabant":
-						masini_vechi.append(lista_masini[i])
-						lista_masini.remove(lista_masini[i])
-						continue
-				print(f"Va propunem masina {lista_masini[i]}")
-				print(f"Masinile vechi curente sunt: {masini_vechi}")
-				print(f"Masinile noi curente sunt: {lista_masini}")
-				print(f"Lungimea curenta a listei este: {len(lista_masini)}")
-				print(f"Indexul elementului curent este: {i}")
-
-# functie_parcurgere_lista_cu_for()
-
-
-def functie_parcurgere_lista_cu_foreach():
-		for masina in lista_masini:
-				if masina == "Lastun" or masina == "Trabant":
-						masini_vechi.append(masina)
-						lista_masini.remove(masina)
-						print(f"Masinile vechi curente sunt: {masini_vechi}")
-						print(f"Masinile noi curente sunt: {lista_masini}")
-						continue
-				print(f"Va propunem masina {masina}")
-				print(f"Masinile vechi curente sunt: {masini_vechi}")
-				print(f"Masinile noi curente sunt: {lista_masini}")
-				print(f"Lungimea curenta a listei este: {len(lista_masini)}")
-				print(f"Indexul elementului curent este: {lista_masini.index(masina)}")
+# def functie_parcurgere_lista_cu_for():
+# 		for i in range (len(lista_masini)):
+# 				if lista_masini[i] == "Lastun" or lista_masini[i] == "Trabant":
+# 						masini_vechi.append(lista_masini[i])
+# 						lista_masini.remove(lista_masini[i])
+# 						continue
+# 				print(f"Va propunem masina {lista_masini[i]}")
+# 				print(f"Masinile vechi curente sunt: {masini_vechi}")
+# 				print(f"Masinile noi curente sunt: {lista_masini}")
+# 				print(f"Lungimea curenta a listei este: {len(lista_masini)}")
+# 				print(f"Indexul elementului curent este: {i}")
+#
+# # functie_parcurgere_lista_cu_for()
+#
+#
+# def functie_parcurgere_lista_cu_foreach():
+# 		for masina in lista_masini:
+# 				if masina == "Lastun" or masina == "Trabant":
+# 						masini_vechi.append(masina)
+# 						lista_masini.remove(masina)
+# 						print(f"Masinile vechi curente sunt: {masini_vechi}")
+# 						print(f"Masinile noi curente sunt: {lista_masini}")
+# 						continue
+# 				print(f"Va propunem masina {masina}")
+# 				print(f"Masinile vechi curente sunt: {masini_vechi}")
+# 				print(f"Masinile noi curente sunt: {lista_masini}")
+# 				print(f"Lungimea curenta a listei este: {len(lista_masini)}")
+# 				print(f"Indexul elementului curent este: {lista_masini.index(masina)}")
 
 functie_parcurgere_lista_cu_foreach()
