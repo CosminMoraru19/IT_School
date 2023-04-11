@@ -48,3 +48,13 @@ class Film(Cinema):
             print('Bilete in sold pentru', film.titlu)
         else:
             print('Ne pare rau. acest film nu mai ruleaza sau nu mai sunt bilete.')
+
+
+# Instantiem filmul
+Film1 = Film('Cinderella', 'Desen_animat',150, 20, 10)
+# Instantiem Cinematofgraful
+Cinema1 = Cinema('Hollywood', 'ParkLake', 150)
+# Adaug filmul in Cinematograf
+Cinema1.add_film(Film)
+# Afisam fimele disponibile
+Cinema1.show_filme()
