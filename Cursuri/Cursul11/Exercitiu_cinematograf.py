@@ -12,7 +12,7 @@ Din clasa respectiva veti instantia obiecte si va veti juca cu ele in functie de
 Daca este posibil definit si functii cu numar nedefinit de parametrii (args / kwargs)
 """
 class Cinema:
-    def init(self, nume, adresa, capacitate):
+    def __init__(self, nume, adresa, capacitate):
         self.nume = nume
         self.adresa = adresa
         self.capacitate = capacitate
@@ -32,8 +32,7 @@ class Cinema:
             print('-', film.titlu)
 
 class Film(Cinema):
-
-    def init(self, titlu, gen, durata, pret_bilet, locuri_disponibile):
+    def __init__(self, titlu, gen, durata, pret_bilet, locuri_disponibile):
         self.titlu = titlu
         self.genul = gen
         self.durata = durata
@@ -57,4 +56,4 @@ Cinema1 = Cinema('Hollywood', 'ParkLake', 150)
 # Adaug filmul in Cinematograf
 Cinema1.add_film(Film)
 # Afisam fimele disponibile
-Cinema1.show_filme()
+Cinema1.rulare_filme()

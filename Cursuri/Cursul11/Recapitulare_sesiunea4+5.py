@@ -186,4 +186,4 @@ valoarea elementului salvat la un anumit index
 # 				print(f"Lungimea curenta a listei este: {len(lista_masini)}")
 # 				print(f"Indexul elementului curent este: {lista_masini.index(masina)}")
 
-functie_parcurgere_lista_cu_foreach()
+# functie_parcurgere_lista_cu_foreach()
