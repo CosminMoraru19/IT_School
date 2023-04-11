@@ -30,3 +30,21 @@ class Cinema:
         print('Filmele ruleaza la', self.nume, 'cinema:')
         for film in self.filme:
             print('-', film.titlu)
+
+class Film(Cinema):
+
+    def init(self, titlu, gen, durata, pret_bilet, locuri_disponibile):
+        self.titlu = titlu
+        self.genul = gen
+        self.durata = durata
+        self.pret_bilet = pret_bilet
+        self.locuri_disponibile = locuri_disponibile
+
+    def vinde_bilete(self, film):
+        if film in self.filme and film.locuri_disponibile > 0:
+            film.locuri_disponibile -= 1
+            self.bilete_vandute += 1
+            self.total_incasari += film.pret_bilet
+            print('Bilete in sold pentru', film.titlu)
+        else:
+            print('Ne pare rau. acest film nu mai ruleaza sau nu mai sunt bilete.')
