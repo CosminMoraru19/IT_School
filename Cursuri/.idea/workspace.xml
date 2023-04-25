@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f08037e-9ee8-4db5-b150-d0156d3e5e95" name="Changes" comment="Add Curs 8">
-      <change afterPath="$PROJECT_DIR$/Recap_Sesiunea9_plus_10/elefant_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recap_Sesiunea9_plus_10/Exercitii_elefant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Recap_Sesiunea9_plus_10/teorie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recap_Sesiunea9_plus_10/elefant_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Recap_Sesiunea9_plus_10/elefant_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -410,7 +409,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682438452709</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add Curs 8">
+      <created>1682441474201</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1682441474201</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add Curs 8">
+      <created>1682441521590</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1682441521590</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
