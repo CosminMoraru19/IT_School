@@ -39,27 +39,27 @@ except Exception as e:
     print(elapsed)
     print(e)
 
-# primul_element = chrome.find_element(By.ID, 'first-name')
-# primul_element.send_keys('ELON')
-# if primul_element:
-#     print('Elementul a fost gasit')
-# else:
-#     print('Nu am gasit elementul')
-#
-# al_doilea_element = chrome.find_element(By.ID, 'last-name')
-# al_doilea_element.send_keys('MUSK')
-# if al_doilea_element:
-#     print('Elementul a fost gasit')
-# else:
-#     print('Nu am gasit elementul')
-#
-# al_treilea_element = chrome.find_element(By.ID, 'job-title')
-# al_treilea_element.send_keys('TESTER')
-# if al_treilea_element:
-#     print('Elementul a fost gasit')
-# else:
-#     print('Nu am gasit elementul')
+primul_element = chrome.find_element(By.ID, 'first-name')
+primul_element.send_keys('ELON')
+if primul_element:
+    print('Elementul a fost gasit')
+else:
+    print('Nu am gasit elementul')
 
-# sleep(5)
+al_doilea_element = chrome.find_element(By.ID, 'last-name')
+al_doilea_element.send_keys('MUSK')
+if al_doilea_element:
+    print('Elementul a fost gasit')
+else:
+    print('Nu am gasit elementul')
+
+al_treilea_element = chrome.find_element(By.ID, 'job-title')
+al_treilea_element.send_keys('TESTER')
+if al_treilea_element:
+    print('Elementul a fost gasit')
+else:
+    print('Nu am gasit elementul')
+
+sleep(5)
 chrome.quit()
 
