@@ -5,11 +5,11 @@ Atunci cand vrem sa implementam framework-ul BDD avem nevoie de urmatoarele elem
     Ele sunt scrise in limbajul gherkin care este un limbaj scris in engleza simpla bazat pe urmatoarele
     cuvinte cheie: GIVEN, WHEN, THEN (https://www.tutorialspoint.com/behave/behave_quick_guide.htm)
 
-2. Aceste feature files trebuie sa aiba la randul lor o implementare tehnica
+2. Aceste features files trebuie sa aiba la randul lor o implementare tehnica
    Aceasta implementare tehnica se face in fisierel de tip steps
    Legatura intre ele se face in felul urmator:
-   - La rulare se citeste mai intai pasul din feature file
-   - Pe baza textului din acel pas de feature file se cauta corespondentul in fisierul de steps
+   - La rulare se citeste mai intai pasul din features file
+   - Pe baza textului din acel pas de features file se cauta corespondentul in fisierul de steps
    - Atunci cand este identificat este executata metoda care este apelata in acel step pe baza unui element context implementat in environment
 
 3. Metodele care sunt apelate in fisierele de steps vor fi apelate in fisierele de tip pages
