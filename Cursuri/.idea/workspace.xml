@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f08037e-9ee8-4db5-b150-d0156d3e5e95" name="Changes" comment="Add Curs 8">
-      <change beforePath="$PROJECT_DIR$/BDD/Concepte_teoretice_framework_BDD.py" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/Concepte_teoretice_framework_BDD.py" afterDir="false" />
-    </list>
+    <list default="true" id="3f08037e-9ee8-4db5-b150-d0156d3e5e95" name="Changes" comment="Add Curs 8" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,20 +189,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673457202991</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Add Curs 8">
-      <created>1677697544298</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1677697544298</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add Curs 8">
-      <created>1678208821464</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1678208821464</updated>
     </task>
     <task id="LOCAL-00005" summary="Add Curs 8">
       <created>1678440934981</created>
@@ -535,7 +519,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683214558544</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Add Curs 8">
+      <created>1683214647781</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1683214647781</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Add Curs 8">
+      <created>1683214700335</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1683214700335</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
